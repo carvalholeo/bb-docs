@@ -23,8 +23,7 @@ function Error404() {
             porque não fazia mais sentido.
           </p>
           <p>
-            Como você pode reslver? Bem, todas as páginas que eu tenho no meu
-            site, estão disponíveis no menu ali em cima. Você pode acessar a{" "}
+            Como você pode reslver? Você pode acessar a{" "}
             <AnchorLink to="/">página inicial</AnchorLink>.
           </p>
         </div>

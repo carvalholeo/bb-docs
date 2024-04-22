@@ -1,27 +1,23 @@
-import { StrictMode } from 'react';
-import { createRoot } from 'react-dom/client';
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
 import { HelmetProvider } from "react-helmet-async";
 
-import * as serviceWorkerRegistration from './serviceWorkerRegistration';
-import reportWebVitals from './lib/reportWebVitals';
+import * as serviceWorkerRegistration from "./serviceWorkerRegistration";
+import reportWebVitals from "./lib/reportWebVitals";
 
-import App from './App';
-import OnlineOfflineProvider from './contexts/OnlineOfflineContext';
-import DarkModeProvider from './contexts/DarkModeContext';
-import { analyticsActions } from './services/analytics';
+import App from "./App";
+import DarkModeProvider from "./contexts/DarkModeContext";
+import { analyticsActions } from "./services/analytics";
 
-createRoot(document.getElementById('root'))
-  .render(
-    <StrictMode>
-      <OnlineOfflineProvider>
-          <DarkModeProvider>
-            <HelmetProvider>
-              <App />
-            </HelmetProvider>
-          </DarkModeProvider>
-      </OnlineOfflineProvider>
-    </StrictMode>
-  )
+createRoot(document.getElementById("root")).render(
+  <StrictMode>
+    <DarkModeProvider>
+      <HelmetProvider>
+        <App />
+      </HelmetProvider>
+    </DarkModeProvider>
+  </StrictMode>
+);
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

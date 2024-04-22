@@ -4,7 +4,6 @@ import { BrowserRouter } from "react-router-dom";
 import "./_custom.scss";
 
 import UserProfileProvider from "./contexts/UserProfileContext";
-import { OnlineOfflineContext } from "./contexts/OnlineOfflineContext";
 import { DarkModeContext } from "./contexts/DarkModeContext";
 import history from "./services/history";
 
@@ -15,7 +14,6 @@ const Routes = lazy(() => import("./routes"));
 const Footer = lazy(() => import("./components/Footer"));
 
 function App() {
-  const { changeOnlineStatus } = useContext(OnlineOfflineContext);
   const { isDark } = useContext(DarkModeContext);
   const [notification, setNotification] = useState(false);
   const [darkMode, setDarkMode] = useState("");
@@ -35,29 +33,7 @@ function App() {
       });
       setNotification(true);
     });
-
-    window.addEventListener("online", () => {
-      setInfo({
-        title: "Você está online",
-        message:
-          "Sua internet está funcionando novamente e voltamos a ficar conectados com o servidor 🔛😎",
-        className: "success",
-      });
-      setNotification(true);
-      changeOnlineStatus(true);
-    });
-
-    window.addEventListener("offline", () => {
-      setInfo({
-        title: "Você está offline",
-        message:
-          "Parece que há um problema na sua conexão e estamos offline📴😭. Verifique sua conexão antes de tentar realizar alguma ação online.",
-        className: "warning text-dark",
-      });
-      setNotification(true);
-      changeOnlineStatus(false);
-    });
-  }, [changeOnlineStatus]);
+  }, []);
 
   useEffect(() => {
     if (isDark) {
