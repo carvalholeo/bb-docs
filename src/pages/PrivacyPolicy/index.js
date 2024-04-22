@@ -13,7 +13,7 @@ function PrivacyPolicy() {
       <main>
         <HelmetWrapper
           title="Termos e privacidade"
-          canonical="privacy"
+          canonical="privacidade"
           keywords="privacidade bb docs, termos de uso bb docs, regras bb docs, regulamento bb docs, privacidade bb docs, termos de uso bb docs, regras bb docs, regulamento bb docs"
           description="Eu sei, ninguém lê essa página, nem aguenta esse papo de advogado. Mas talvez você queira saber os seus direitos, o que pode ou não fazer comigo. Dá uma lida aqui."
         />
