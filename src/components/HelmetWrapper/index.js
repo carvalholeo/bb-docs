@@ -2,9 +2,9 @@ import { Helmet } from "react-helmet-async";
 
 function HelmetWrapper({ title, canonical, keywords, description, children }) {
   return (
-    <Helmet titleTemplate="%s | Protestant Bot" defaultTitle="Gerenciamento do BotLutero">
+    <Helmet titleTemplate="%s | BB Docs">
       <title>{title}</title>
-      <meta name="keywords" content={`bot lutero, martinho lutero, retweetar reforma protestante, reforma protestante, lutero bot, dia da reforma, dia do protesto, ${keywords}`} />
+      <meta name="keywords" content={`bb docs, bbdocs, contratação bb, contratação banco do brasil, ${keywords}`} />
       {description && (
         <meta name="description" content={description} />
       )}
