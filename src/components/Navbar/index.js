@@ -26,7 +26,7 @@ function Navbar() {
       <nav className={"navbar navbar-expand-lg mb-3 fixed-top "+ darkClass}>
         <div className="container-fluid">
           <Link className="navbar-brand" to="/">
-            Protestant Bot
+            BB Docs
           </Link>
           <button
             className="navbar-toggler"
@@ -41,22 +41,22 @@ function Navbar() {
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <span className={"navbar-nav me-auto mb-4 mb-lg-0 " + textLightClass}>
-              Bot cristão para o Twitter
+              Ajuda para novos Funcis
             </span>
             <ul className="navbar-nav mb-2 mb-lg-0">
               <li className="nav-item">
                 <NavLink className="nav-link" to="/">
-                  Sobre mim
+                  Home
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link" to="/privacy">
+                <NavLink className="nav-link" to="/privacidade">
                   Termos e privacidade
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link" to="/releasenotes">
-                  Histórico
+                <NavLink className="nav-link" to="/sobre">
+                  Sobre
                 </NavLink>
               </li>
             </ul>

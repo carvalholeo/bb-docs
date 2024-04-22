@@ -1,7 +1,7 @@
 import Plausible from "plausible-tracker";
 
 const OPTIONS = {
-  domain: "protestantbot.leocarvalho.dev",
+  domain: "bb-docs.leocarvalho.dev",
   trackLocalhost: false,
   apiHost: process.env.REACT_APP_ANALYTICS_SERVER,
   trackOutboundLinks: true,
@@ -28,8 +28,6 @@ export const trackerExecution = trackerFunction();
 
 export function analyticsActions({ name, value }) {
   const event = WEB_VITALS[name];
-
-  console.log(event, value);
 
   plausible.trackEvent(event, { props: { value } });
 }

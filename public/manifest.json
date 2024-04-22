@@ -1,9 +1,9 @@
 {
-  "short_name": "BotLutero",
-  "name": "Bot Lutero: O bot da Reforma Protestante",
+  "short_name": "BB Docs",
+  "name": "BB Docs: Reúna documentos para sua qualificação no Banco do Brasil.",
   "lang": "pt-BR",
   "dir": "ltr",
-  "description": "App para gerenciar o bot Protestant Bot, que retweeta conteúdo cristão na conta @BotLutero no Twitter.",
+  "description": "Mini-app para auxiliar aprovados nos concursos do Banco do Brasil a conseguir reunir sua documentação.",
   "icons": [
     {
       "src": "favicon.ico",
@@ -41,10 +41,10 @@
       "sizes": "1080x1080"
     }
   ],
-  "categories": ["social", "religion", "lifestyle"],
+  "categories": ["social", "government", "employee"],
   "start_url": "/",
   "display": "standalone",
-  "theme_color": "#ffbe03",
+  "theme_color": "#FCFC30",
   "background_color": "#ffffff",
   "orientation": "portrait"
 }
