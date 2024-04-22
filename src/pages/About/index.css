@@ -1,0 +1,19 @@
+.litlle-luther {
+  width: 22rem;
+  height: 12.31rem;
+  margin-bottom: 3rem;
+}
+
+@media (max-width: 768px) {
+  .container-luther {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .litlle-luther {
+    max-width: 17.6rem;
+    max-height: 9.84rem;
+    margin-bottom: 3rem;
+  }
+}
