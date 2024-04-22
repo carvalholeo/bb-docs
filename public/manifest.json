@@ -39,11 +39,16 @@
       "src": "logo1080.png",
       "type": "image/png",
       "sizes": "1080x1080"
+    },
+    {
+      "src": "logo1080.png",
+      "type": "image/png",
+      "sizes": "any"
     }
   ],
   "categories": ["social", "government", "employee"],
   "start_url": "/",
-  "display": "standalone",
+  "display": "fullscreen",
   "theme_color": "#FCFC30",
   "background_color": "#ffffff",
   "orientation": "portrait"
