@@ -1,7 +1,29 @@
 {
   "name": "bb-docs",
   "version": "0.2.0",
-  "private": true,
+  "private": false,
+  "keywords": [
+    "bando do brasil",
+    "bb"
+  ],
+  "homepage": "https://bbdocs.leocarvalho.dev",
+  "bugs": {
+    "url": "https://github.com/carvalholeo/bb-docs/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/carvalholeo/bb-docs.git"
+  },
+  "funding": {
+    "type": "pix",
+    "url": "mailto:pix@leocarvalhole.dev"
+  },
+  "license": "Apache-2.0",
+  "author": {
+    "name": "Léo Carvalho",
+    "email": "leo@leocarvalhole.dev",
+    "url": "http://leocarvalhole.dev"
+  },
   "scripts": {
     "analyze": "source-map-explorer 'build/static/js/*.js'",
     "build": "react-scripts build",
@@ -26,6 +48,11 @@
       "react-app",
       "react-app/jest"
     ]
+  },
+  "resolutions": {
+    "autoprefixer": "10.4.13",
+    "resolve-url-loader": "^5.0.0",
+    "svgo": "^2.0.0"
   },
   "dependencies": {
     "@popperjs/core": "^2.11.8",
@@ -66,11 +93,11 @@
     "sass-loader": "^14.2.1",
     "source-map-explorer": "^2.5.3"
   },
-  "resolutions": {
-    "autoprefixer": "10.4.13",
-    "svgo": "^2.0.0",
-    "resolve-url-loader": "^5.0.0"
+  "engines": {
+    "node": ">=18.x",
+    "yarn": ">=1.21"
   },
+  "engineStrict": true,
   "overrides": {
     "autoprefixer": "^10.4.13"
   }
