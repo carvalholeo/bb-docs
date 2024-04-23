@@ -1,5 +1,7 @@
 import { Suspense, lazy, useEffect, useState, useContext } from "react";
 import { BrowserRouter } from "react-router-dom";
+import { ChakraProvider, extendTheme } from "@chakra-ui/react";
+import { StepsTheme as Steps } from "chakra-ui-steps";
 
 import "./_custom.scss";
 
@@ -12,6 +14,12 @@ import NotificationToast from "./components/NotificationToast";
 
 const Routes = lazy(() => import("./routes"));
 const Footer = lazy(() => import("./components/Footer"));
+
+const theme = extendTheme({
+  components: {
+    Steps,
+  },
+});
 
 function App() {
   const { isDark } = useContext(DarkModeContext);
@@ -65,8 +73,10 @@ function App() {
             </NotificationToast>
           )}
           <UserProfileProvider>
-            <Routes />
-            <Footer />
+            <ChakraProvider theme={theme}>
+              <Routes />
+              <Footer />
+            </ChakraProvider>
           </UserProfileProvider>
         </Suspense>
       </div>
