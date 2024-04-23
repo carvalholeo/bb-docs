@@ -35,11 +35,11 @@ function ReleaseNotes() {
           <h2><AnchorHTML href="https://github.com/carvalholeo/bb-docs" target="_blank" rel="noreferrer noopener">Histórico do app</AnchorHTML></h2>
 
           <details>
-            <summary>04 de abril de 2021</summary>
+            <summary>25 de abril de 2024</summary>
             <ul>
-              <li>Versão inicial - 0.1</li>
+              <li>Versão inicial - 1.0</li>
               <ul>
-                <li>Nessa primeira versão, foram liberados no site a opção de bloquear e desbloquear um perfil, a história e motivação do bot, termos de uso e meios de contato com o desenvolvedor.</li>
+                <li>Release inicial</li>
               </ul>
             </ul>
           </details>

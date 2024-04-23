@@ -116,7 +116,7 @@ function PrivacyPolicy() {
             <p>
               Os dados coletados por meio da telemetria são anônimos e não
               permitem a identificação individual dos usuários. Eles incluem as
-              seguintes informações:
+              seguintes informações:</p>
               <ul>
                 <li>
                   origem do acesso (se foi direto ou através de outros sites),
@@ -131,6 +131,7 @@ function PrivacyPolicy() {
                 <li>tamanho aproximado da tela da tela, e</li>
                 <li>indicadores do Web Core Vitals.</li>
               </ul>
+              <p>
               Essas informações são úteis para auxiliar na melhoria das
               informações do site, bem como em projetos de layouts específicos
               para cenários de maiores acessos. Todas as informações coletadas
